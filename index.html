@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Louis GeoNames example</title>
+		<meta name="description" content="GeoNames example">
+		<meta name="author" content="Louis Pearce-Henderson">
+		<style>
+			table, th, td{
+				border:1px solid black;
+			}
+			td.description{
+				width:65%;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<table style="width:100%">
+			<tr>
+				<th>API NAME</th>
+				<th>API Description</th>
+				<th>Press to try</th>
+			</tr>
+			<tr>
+				<td>Neighbours</td>
+				<td class="description">Takes in the country and will return the number of neighbouring Countries</td>
+				<td>
+					<select id="selCountry">
+						<option value="IT">ITALY</option>
+						<option value="FR">France</option>
+						<option value="GB">Great Britan</option>
+						<option value="US">USA</option>
+					</select>
+					<button id="btnRunNeighbours">Run</button>
+				</td>
+			</tr>
+			<tr>
+				<td>Api name</td>
+				<td class="description">api description</td>
+				<td><button id="btnRun2">Run</button></td>
+			</tr>
+			<tr>
+				<td>Api name</td>
+				<td class="description">api description</td>
+				<td><button id="btnRun3">Run</button></td>
+			</tr>
+			<tr>
+				<td id="txtNeighbours" colspan="3">Neighbours Results </td>
+			</tr>
+			<tr>
+				<td id="txtContinent" colspan="3">Second Results </td>
+			</tr>
+			<tr>
+				<td id="txtContinent" colspan="3">Third Results </td>
+			</tr>
+
+		  </table>
+
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+
+	</body>
+
+</html>
