@@ -16,6 +16,9 @@
 			td.description{
 				width:65%;
 			}
+			div.countryInfo{
+				text-align: left;
+			}
 		</style>
 
 	</head>
@@ -30,35 +33,109 @@
 			</tr>
 			<tr>
 				<td>Neighbours</td>
-				<td class="description">Takes in the country and will return the number of neighbouring Countries</td>
+				<td class="description">Takes in the country and will return the number of neighbouring Countries and there name.</td>
 				<td>
 					<select id="selCountry">
-						<option value="IT">ITALY</option>
+						<option value="IT">Italy</option>
 						<option value="FR">France</option>
 						<option value="GB">Great Britan</option>
 						<option value="US">USA</option>
+						<option value="BR">Brazil</option>
+						<option value="MC">Monaco</option>
+						<option value="NP">Nepal</option>
+						<option value="PT">Portugal</option>
 					</select>
 					<button id="btnRunNeighbours">Run</button>
 				</td>
 			</tr>
 			<tr>
-				<td>Api name</td>
-				<td class="description">api description</td>
-				<td><button id="btnRun2">Run</button></td>
+				<td>Get information</td>
+				<td class="description">get countries information in different languages. </td>
+				<td>
+					<select id="selCountry2">
+						<option value="GB">Great Britain</option>
+						<option value="FR">France</option>
+						<option value="DE">Germany</option>
+						<option value="US">USA</option>
+						<option value="BR">Brazil</option>
+						<option value="CH">Switzerland</option>
+						<option value="IN">India</option>
+					</select>
+					<select id="selLanguage2">
+						<option value="en">English</option>
+						<option value="fr">Francais</option>
+						<option value="de">Deutsche</option>
+					</select>
+					<button id="btnRunInfo">Run</button>
+				</td>
 			</tr>
 			<tr>
-				<td>Api name</td>
-				<td class="description">api description</td>
-				<td><button id="btnRun3">Run</button></td>
+				<td>Ocean</td>
+				<td class="description">Takes the lat and long and returns the nearest ocean </td>
+				<td>
+					<label for="selLat">Latitude</label>
+					<select id="selLat">
+						<option value="-150">-150</option>
+						<option value="-120">-120</option>
+						<option value="-90">-90</option>
+						<option value="-60">-60</option>
+						<option value="-30">-30</option>
+						<option value="00">00</option>
+						<option value="30">30</option>
+						<option value="60">60</option>
+						<option value="90">90</option>
+						<option value="120">120</option>
+						<option value="150">150</option>
+					</select>
+					<label for="selLong">,Longitude</label>
+					<select id="selLong">
+						<option value="-150">-150</option>
+						<option value="-120">-120</option>
+						<option value="-90">-90</option>
+						<option value="-60">-60</option>
+						<option value="-30">-30</option>
+						<option value="00">00</option>
+						<option value="30">30</option>
+						<option value="60">60</option>
+						<option value="90">90</option>
+						<option value="120">120</option>
+						<option value="150">150</option>
+					</select>
+					<button id="btnRunOcean">Run</button>
+				</td>
 			</tr>
 			<tr>
-				<td id="txtNeighbours" colspan="3">Neighbours Results </td>
+				<td colspan="1">Neighbours Results </td>
+				<td id="txtNeighbours" colspan="2">
+
+				</td>
 			</tr>
 			<tr>
-				<td id="txtContinent" colspan="3">Second Results </td>
+				<td colspan="1">Info Results </td>
+				<td colspan="2">
+					<div class="countryInfo">
+						Continent:
+						<p id="txtContinent" ></p>
+					</div>
+					<div class="countryInfo">
+						Population:	
+						<p id="txtPopulation" ></p>
+					</div>
+					<div class="countryInfo">
+						Land Mass:
+						<p id="txtArea" ></p>
+					</div>
+					<div class="countryInfo">
+						Capital City:
+						<p id="txtCapital" ></p>
+					</div>	
+				</td>
 			</tr>
 			<tr>
-				<td id="txtContinent" colspan="3">Third Results </td>
+				<td colspan="1">Ocean Results</td>
+				<td id="txtOcean" colspan="2">
+
+				</td>
 			</tr>
 
 		  </table>
